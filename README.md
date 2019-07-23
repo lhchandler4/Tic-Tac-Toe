@@ -30,4 +30,14 @@ Full Cloud Deployment Pipeline of Tic Tac Toe
 3. Create a configuration file (text) in the root folder of the application called ```beanstalk.config```
 4. In the configuration file add the following fields with your specific region and endpoint.
 ![](./screenshots/config.png)
-5.
+
+
+
+### Potential Blockers
+- The version of python that is being used needs to be specified when creating the environment. 
+This is found under the additional configuration options. 
+![](./screenshots/PythonVersion.png)
+- Make sure the region and DynamoDB endpoints are also in the config file that comes with the 
+app repository.
+- Add ID and Secret_Key to environment variables
+- ![](./screenshots/InvalidState.png)
