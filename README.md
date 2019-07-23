@@ -15,8 +15,19 @@ Full Cloud Deployment Pipeline of Tic Tac Toe
 4. Go to the desired location in the terminal and clone the tic-tac-toe application repository. In the terminal type:
  ```git clone https://github.com/awslabs/dynamodb-tictactoe-example-app.git```   
 
-### Testing the Game Application
+### Testing the Game Application Locally
 1. Start DyanamoDB locally
+    - To start DynamoDB on your computer navigate to the jar file location and run ```java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb``` from your terminal
 2. In your terminal type ```python application.py --mode local --serverPort 5000 --port 8000 ```
     - got to localhost:5000 in your browser
-3. 
+3. Now the application should be running.  
+![](./screenshots/locallyRunning.png)
+
+
+### Deployment 
+1. Ensure that you have an IAM role with the necessary permissions (DynamoDBFullAccess)
+2. The application will automatically create a Games table in DynamoDB.
+3. Create a configuration file (text) in the root folder of the application called ```beanstalk.config```
+4. In the configuration file add the following fields with your specific region and endpoint.
+![](./screenshots/config.png)
+5.
