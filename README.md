@@ -42,7 +42,7 @@ is the elastic beanstalk ec2 role and the IAM instance profile is the one with t
 ### CI/CD
 1. In the .ebextensions add the following line designating the WSIGpath`````“aws:elasticbeanstalk:container:python”:
       WSGIPath: application.py`````
-
+![](./screenshots/pipeline.png)
 
 ### Potential Blockers
 - The version of python that is being used needs to be specified when creating the environment. 
