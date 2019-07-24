@@ -50,3 +50,7 @@ This is found under the additional configuration options.
 ![](./screenshots/PythonVersion.png)
 - Make sure the region and DynamoDB endpoints are also in the config file that comes with the 
 app repository.
+
+### Source
+- https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TicTacToe.Phase1.html
+- https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TicTacToe.Phase3.html
