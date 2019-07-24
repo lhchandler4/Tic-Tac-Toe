@@ -50,5 +50,3 @@ This is found under the additional configuration options.
 ![](./screenshots/PythonVersion.png)
 - Make sure the region and DynamoDB endpoints are also in the config file that comes with the 
 app repository.
-- Add ID and Secret_Key to environment variables
-- ![](./screenshots/InvalidState.png)
