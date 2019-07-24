@@ -1,6 +1,9 @@
 # Tic-Tac-Toe
 Full Cloud Deployment Pipeline of Tic Tac Toe
 
+## Deployed Website
+- Tictactoe-env-1.uhm9bx8bpp.us-west-2.elasticbeanstalk.com
+
 ## Instructions
 ### Download the Required Packages
 1. Install Python (https://www.python.org/downloads/) preferably 2.7
@@ -30,7 +33,15 @@ Full Cloud Deployment Pipeline of Tic Tac Toe
 3. Create a configuration file (text) in the root folder of the application called ```beanstalk.config```
 4. In the configuration file add the following fields with your specific region and endpoint.
 ![](./screenshots/config.png)
+5. When you are creating the .zip file make sure you select all of the files in the directory and then compress them to the .zip file
+6. For you IAM user/role create a new policy with your specific region and account number
+![](./screenshots/policy.png)
+7. The elastic beanstalk configuration and inside security make sure the service role
+is the elastic beanstalk ec2 role and the IAM instance profile is the one with the policy attached
 
+### CI/CD
+1. In the .ebextensions add the following line designating the WSIGpath`````“aws:elasticbeanstalk:container:python”:
+      WSGIPath: application.py`````
 
 
 ### Potential Blockers
